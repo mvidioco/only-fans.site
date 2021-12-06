@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^(.+).site.ru$
+RewriteRule (.*) https://site.ru/$1 [L,R=301,QSA]
